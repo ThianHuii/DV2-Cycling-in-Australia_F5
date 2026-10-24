@@ -62,7 +62,7 @@
   async function render(host){
     try{
       const specURL=new URL(host.dataset.spec,window.location.href);
-      specURL.searchParams.set('v','spacing-6');
+      specURL.searchParams.set('v','spacing-7');
       const response=await fetch(specURL);
       if(!response.ok)throw new Error(`Chart returned ${response.status}`);
       const original=await response.json();

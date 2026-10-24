@@ -94,3 +94,9 @@
    Suppress its margins so notes follow the SVG directly. */
 .chart.vega-embed > .vega-bindings:empty{display:none!important;margin:0!important;padding:0!important}
 .figure-2 .chart.vega-embed,.figure-5 .chart.vega-embed,.figure-9 .chart.vega-embed{padding-block:0!important}
+
+/* Calendar uses separate HTML controls; Vega's binding area is unused. */
+.chart.vega-embed .vega-bindings{display:none!important;height:0!important;min-height:0!important;margin:0!important;padding:0!important}
+.chart.vega-embed{line-height:0!important}
+.chart.vega-embed svg{vertical-align:top}
+.figure-2 .chart-story,.figure-5 .chart-story,.figure-9 .chart-story{margin-top:4px!important;padding-top:8px!important}
